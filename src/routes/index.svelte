@@ -4,4 +4,4 @@
 </script>
 
 <h1>Hello from the edge!</h1>
-<p>Your IP address is {ip}. The time is {new Date()}</p>
+<p>Your IP address is {ip}</p>
