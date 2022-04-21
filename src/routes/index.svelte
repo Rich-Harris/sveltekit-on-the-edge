@@ -29,12 +29,16 @@
 
 	<div class="info">
 		<div class="block">
-			<span>Your city</span>
-			<strong>{city}</strong>
+			<div class="contents">
+				<span>Your city</span>
+				<strong>{city}</strong>
+			</div>
 		</div>
 		<div class="block">
-			<span>Your IP address</span>
-			<strong>{ip}</strong>
+			<div class="contents">
+				<span>Your IP address</span>
+				<strong>{ip}</strong>
+			</div>
 		</div>
 	</div>
 </main>
@@ -42,7 +46,8 @@
 <footer>
 	<p>
 		Built with <a href="https://kit.svelte.dev">SvelteKit</a> and
-		<a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel">adapter-vercel</a>
+		<a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel">adapter-vercel</a
+		>. Source on <a href="https://github.com/Rich-Harris/sveltekit-on-the-edge">GitHub</a>.
 	</p>
 </footer>
 
@@ -61,7 +66,7 @@
 
 	h1 {
 		font-size: min(8vw, 4rem);
-		font-weight: 800;
+		font-weight: 600;
 		margin: 0;
 	}
 
@@ -72,23 +77,49 @@
 
 	a {
 		color: #ff3e00;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: hover;
 	}
 
 	.info {
-		display: flex;
-		gap: 2rem;
+		display: grid;
+		/* gap: 2rem; */
 		grid-template-columns: 1fr 1fr;
 		font-size: min(4vw, 2rem);
 		margin: 20vh 0 0 0;
-		padding: 1rem;
 		background-color: rgba(255, 255, 255, 0.5);
-		border-top: 1px solid black;
 	}
 
-	.info span {
+	.block {
+		display: flex;
+	}
+
+	.block:nth-child(1) {
+		border-right: 1px solid rgba(0, 0, 0, 0.15);
+		justify-content: end;
+		padding: 0 4rem 0 1rem;
+	}
+
+	.block:nth-child(2) {
+		justify-content: end;
+		padding: 0 1rem 0 4rem;
+	}
+
+	.block span {
+		display: block;
+		margin: 0 0 0.5em 0;
 		text-transform: uppercase;
 		font-size: 0.6em;
+	}
+
+	.block strong {
 		display: block;
+		font-size: 1.4em;
+		margin: 0;
+		font-weight: 600;
 	}
 
 	footer {
@@ -105,7 +136,10 @@
 	@media (prefers-color-scheme: dark) {
 		.info {
 			background-color: rgba(0, 0, 0, 0.5);
-			border-top: 1px solid white;
+		}
+
+		.block:nth-child(1) {
+			border-right: 1px solid rgba(255, 255, 255, 0.35);
 		}
 	}
 </style>
