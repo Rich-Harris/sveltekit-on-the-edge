@@ -2,7 +2,8 @@
 export function get(event) {
 	return {
 		body: {
-			ip: event.clientAddress
+			ip: event.clientAddress,
+			city: event.request.headers.get('x-vercel-ip-city')
 		}
 	};
 }

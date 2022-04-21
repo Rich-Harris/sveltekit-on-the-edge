@@ -7,14 +7,27 @@
 
 <script>
 	import '../app.css';
+	import card from '$lib/images/light.webp';
+
+	/** @type {string} */
+	export let city;
 
 	/** @type {string} */
 	export let ip;
 </script>
 
+<svelte:head>
+	<title>SvelteKit on the edge</title>
+	<meta name="twitter:image" content={card} />
+</svelte:head>
+
 <main>
 	<h1>Hello from the edge!</h1>
-	<p>Your IP address is {ip}</p>
+
+	<div class="info">
+		<p>Your city: {city}</p>
+		<p>Your IP address: {ip}</p>
+	</div>
 </main>
 
 <style>
@@ -38,6 +51,7 @@
 	p {
 		font-size: 4vw;
 		font-weight: 400;
+		margin: 0 0.5em;
 	}
 
 	@media (prefers-color-scheme: dark) {
