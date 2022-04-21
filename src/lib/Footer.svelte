@@ -11,7 +11,7 @@
 	</p>
 
 	<p class="details">
-		Built with <a href="https://kit.svelte.dev">SvelteKit</a> and
+		Built with <a href="https://kit.svelte.dev">SvelteKit</a> +
 		<a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel">adapter-vercel</a>
 	</p>
 
@@ -24,7 +24,7 @@
 				fill="var(--fg)"
 			/>
 		</svg>
-		<a href="https://github.com/Rich-Harris/sveltekit-on-the-edge">Source code</a>
+		<a href="https://github.com/Rich-Harris/sveltekit-on-the-edge">Source</a>
 	</p>
 </footer>
 
@@ -59,6 +59,7 @@
 	.details {
 		order: 3;
 		grid-column: 1/3;
+		white-space: nowrap;
 	}
 
 	.source,

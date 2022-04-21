@@ -27,7 +27,7 @@
 <Card />
 
 <main>
-	<h1>Hello from the edge!</h1>
+	<h1><span>Hello from the edge!</span></h1>
 
 	<div class="info">
 		<div class="block">
@@ -61,7 +61,7 @@
 	}
 
 	h1 {
-		font-size: min(16vw, 6rem);
+		font-size: min(16vw, 4rem);
 		font-weight: 600;
 		margin: 0;
 		text-align: center;
@@ -74,16 +74,21 @@
 		line-height: 1;
 	}
 
+	h1 span {
+		display: block;
+		max-width: 6em;
+		margin: 0 auto;
+	}
+
 	.info {
 		--border-color: rgba(0, 0, 0, 0.08);
 		position: absolute;
-		top: 55vh;
+		bottom: 8rem;
 		left: 0;
 		width: 100%;
 		display: grid;
 		padding: 0 2.5rem;
 		font-size: min(5vw, 2rem);
-		background-color: rgba(255, 255, 255, 0.5);
 		box-sizing: border-box;
 	}
 
@@ -116,6 +121,10 @@
 			font-size: min(8vw, 4rem);
 		}
 
+		h1 span {
+			max-width: none;
+		}
+
 		.info {
 			display: flex;
 			justify-content: center;
@@ -138,7 +147,7 @@
 
 	@media (prefers-color-scheme: dark) {
 		.info {
-			background-color: rgba(0, 0, 0, 0.5);
+			/* background-color: rgba(0, 0, 0, 0.5); */
 		}
 
 		.block:nth-child(1) {
