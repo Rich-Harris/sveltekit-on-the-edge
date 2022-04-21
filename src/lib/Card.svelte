@@ -66,6 +66,32 @@
 			<stop offset=".464" style="stop-opacity: 0.16" />
 			<stop offset=".771" style="stop-opacity:0" />
 		</linearGradient>
+
+		<linearGradient
+			id="gradient-vercel"
+			gradientUnits="objectBoundingBox"
+			x1="0"
+			y1="0"
+			x2="1.5"
+			y2="1"
+		>
+			<stop offset="0.3" style="stop-color: #eee;" />
+			<stop offset="0.5" style="stop-color: #fff;" />
+			<stop offset="0.8" style="stop-color: #eee" />
+		</linearGradient>
+
+		<linearGradient
+			id="gradient-svelte"
+			gradientUnits="objectBoundingBox"
+			x1="0"
+			y1="0"
+			x2="1.1"
+			y2="1"
+		>
+			<stop offset="0.3" style="stop-color: #ff3e00;" />
+			<stop offset="0.5" style="stop-color: #ff7f54;" />
+			<stop offset="0.8" style="stop-color: #ff3e00" />
+		</linearGradient>
 	</defs>
 
 	<circle
@@ -110,7 +136,7 @@
 	<circle class="gray satellite" style="animation-delay: 0.9s" cx="350.4" cy="144" r="5.8" />
 	<circle class="gray satellite" style="animation-delay: 1s" cx="670" cy="314.4" r="5.8" />
 
-	<path id="vercel-logo" d="m336.4 261-46.2-80-46.2 80h92.4z" fill="var(--fg)" />
+	<path id="vercel-logo" d="m336.4 261-46.2-80-46.2 80h92.4z" style="fill:url(#gradient-vercel)" />
 
 	<g id="center">
 		<path
@@ -122,7 +148,7 @@
 	<g id="svelte-logo">
 		<path
 			d="M570.1 191.9c-6.9-10.6-20.7-13.8-30.6-7l-17.4 11.9c-4.8 3.2-8 8.4-9 14.3-.8 4.9-.1 10 2.1 14.5-1.5 2.4-2.5 5.1-3 8-1 6 .3 12.3 3.6 17.3 6.9 10.7 20.7 13.8 30.6 7l17.4-11.9c4.8-3.2 8-8.4 9-14.3.8-4.9.1-10-2.1-14.5 1.5-2.4 2.5-5.1 3-8 1-6.1-.3-12.4-3.6-17.3"
-			style="fill:#ff3e00"
+			style="fill:url(#gradient-svelte)"
 		/>
 		<path
 			style="fill: white"
@@ -178,6 +204,7 @@
 	}
 
 	.orange.satellite {
+		/* stroke: #ff7f54; */
 		stroke: #ff3e00;
 	}
 
