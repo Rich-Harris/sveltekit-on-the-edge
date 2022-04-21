@@ -74,6 +74,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		font-size: 4vw;
+		margin: 20vh 0 0 0;
 		padding: 1rem;
 		background-color: rgba(0, 0, 0, 0.5);
 		border-top: 1px solid white;
