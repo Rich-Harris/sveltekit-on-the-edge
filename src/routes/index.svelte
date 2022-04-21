@@ -71,6 +71,7 @@
 		width: 100%;
 		padding: 0 2.5rem;
 		box-sizing: border-box;
+		line-height: 1;
 	}
 
 	.info {
