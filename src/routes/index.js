@@ -3,7 +3,9 @@ export function get(event) {
 	return {
 		body: {
 			ip: event.clientAddress,
-			city: event.request.headers.get('x-vercel-ip-city')
+			city: decodeURIComponent(
+				/** @type {string} */ (event.request.headers.get('x-vercel-ip-city'))
+			)
 		}
 	};
 }
