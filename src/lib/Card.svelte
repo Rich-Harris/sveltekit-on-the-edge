@@ -96,35 +96,35 @@
 
 	<circle
 		class="orbit"
-		style="stroke:url(#gradient-1); animation-delay: 0s; animation-duration: 0.3s"
+		style="stroke:url(#gradient-1); animation-delay: 0;"
 		cx="420"
 		cy="221"
 		r="53.4"
 	/>
 	<circle
 		class="orbit"
-		style="stroke:url(#gradient-2); animation-delay: 0.03s; animation-duration: 0.4s"
+		style="stroke:url(#gradient-2); animation-delay: 0.03s;"
 		cx="420"
 		cy="221"
 		r="103.4"
 	/>
 	<circle
 		class="orbit"
-		style="stroke:url(#gradient-3); animation-delay: 0.06s; animation-duration: 0.5s"
+		style="stroke:url(#gradient-3); animation-delay: 0.06s;"
 		cx="420"
 		cy="221"
 		r="160.4"
 	/>
 	<circle
 		class="orbit"
-		style="stroke:url(#gradient-4); animation-delay: 0.09s; animation-duration: 0.6s"
+		style="stroke:url(#gradient-4); animation-delay: 0.09s;"
 		cx="419.9"
 		cy="221.1"
 		r="267.3"
 	/>
 	<circle
 		class="orbit"
-		style="stroke:url(#gradient-5); animation-delay: 0.12s; animation-duration: 0.7s"
+		style="stroke:url(#gradient-5); animation-delay: 0.12s;"
 		cx="419.9"
 		cy="221.1"
 		r="388.5"
@@ -172,20 +172,28 @@
 			opacity: 0;
 			transform: scale(0.96);
 		}
-		50% {
+		3% {
 			opacity: 0.7;
 			transform: scale(1.03);
 		}
-		60% {
+		3.6% {
 			opacity: 0.8;
 			transform: scale(1.05);
 		}
-		70% {
+		4.2% {
 			opacity: 0.9;
 			transform: scale(1.03);
 		}
-		100% {
+		6% {
 			opacity: 1;
+			transform: scale(1);
+		}
+		95% {
+			opacity: 1;
+			transform: scale(1);
+		}
+		100% {
+			opacity: 0;
 			transform: scale(1);
 		}
 	}
@@ -214,7 +222,7 @@
 	.orbit {
 		fill: none;
 		stroke-width: 1.165;
-		animation: grow 0.3s linear both;
+		animation: grow 5s linear both infinite;
 		transform-origin: 50% 50%;
 	}
 
