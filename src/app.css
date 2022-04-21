@@ -11,6 +11,17 @@
 }
 
 body {
+	--fg: black;
+	--bg: white;
 	margin: 0;
 	font-family: Inter;
+	background: var(--bg);
+	color: var(--fg);
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		--fg: white;
+		--bg: black;
+	}
 }

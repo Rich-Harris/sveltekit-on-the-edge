@@ -8,6 +8,7 @@
 <script>
 	import '../app.css';
 	import card from '$lib/images/light.webp';
+	import Card from '$lib/Card.svelte';
 
 	/** @type {string} */
 	export let city;
@@ -21,24 +22,35 @@
 	<meta name="twitter:image" content={card} />
 </svelte:head>
 
+<Card />
+
 <main>
 	<h1>Hello from the edge!</h1>
 
 	<div class="info">
-		<p>Your city: {city}</p>
-		<p>Your IP address: {ip}</p>
+		<span>Your city</span>
+		<span>Your IP address</span>
+		<strong>{city}</strong>
+		<strong>{ip}</strong>
 	</div>
 </main>
 
+<footer>
+	<p>
+		Built with <a href="https://kit.svelte.dev">SvelteKit</a> and
+		<a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel">adapter-vercel</a>
+	</p>
+</footer>
+
 <style>
 	main {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
 		width: 100vw;
 		height: 100vh;
-		background: white url($lib/images/light.webp) 50% 50% / contain no-repeat;
 		padding: 1rem;
 		box-sizing: border-box;
 	}
@@ -46,19 +58,40 @@
 	h1 {
 		font-size: 8vw;
 		font-weight: 800;
+		margin: 0;
 	}
 
 	p {
-		font-size: 4vw;
 		font-weight: 400;
-		margin: 0 0.5em;
+		margin: 0.5em 0;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		main {
-			background-color: black;
-			background-image: url($lib/images/dark.webp);
-			color: white;
-		}
+	a {
+		color: #ff3e00;
+	}
+
+	.info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		font-size: 4vw;
+		padding: 1rem;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-top: 1px solid white;
+	}
+
+	.info span {
+		text-transform: uppercase;
+		font-size: 0.6em;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		padding: 1rem;
+		box-sizing: border-box;
+		font-size: 16px;
 	}
 </style>
