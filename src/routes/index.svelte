@@ -73,7 +73,7 @@
 	}
 
 	.info {
-		--border-color: rgba(0, 0, 0, 0.15);
+		--border-color: rgba(0, 0, 0, 0.08);
 		position: absolute;
 		top: 55vh;
 		left: 0;
