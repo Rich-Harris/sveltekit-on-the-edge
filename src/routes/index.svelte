@@ -50,10 +50,6 @@
 <style>
 	main {
 		position: relative;
-		/* display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-evenly; */
 		width: 100vw;
 		height: 100vh;
 		padding: 2.5rem;
@@ -136,7 +132,6 @@
 
 		.block:nth-child(1) {
 			border-bottom: none;
-			/* border-right: 1px solid var(--border-color); */
 			justify-content: end;
 		}
 
@@ -146,10 +141,6 @@
 	}
 
 	@media (prefers-color-scheme: dark) {
-		.info {
-			/* background-color: rgba(0, 0, 0, 0.5); */
-		}
-
 		.block:nth-child(1) {
 			--border-color: rgba(255, 255, 255, 0.35);
 		}
