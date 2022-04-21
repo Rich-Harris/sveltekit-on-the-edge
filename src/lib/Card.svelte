@@ -1,4 +1,4 @@
-<svg viewBox="0 0 840 440">
+<svg viewBox="0 50 840 440">
 	<defs>
 		<linearGradient
 			id="gradient-1"
