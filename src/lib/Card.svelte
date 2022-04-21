@@ -9,8 +9,8 @@
 			y2="167"
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
-			<stop offset=".464" style="stop-color:#cfcfcf" />
-			<stop offset="1" style="stop-color:#aeaeae;stop-opacity:0" />
+			<stop offset=".464" style="stop-opacity:0.15" />
+			<stop offset="0.9" style="stop-opacity:0" />
 		</linearGradient>
 
 		<linearGradient
@@ -22,8 +22,8 @@
 			y2="117.001"
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
-			<stop offset=".464" style="stop-color:#dfdfdf" />
-			<stop offset="1" style="stop-color:#adadad;stop-opacity:0" />
+			<stop offset=".464" style="stop-opacity:0.15" />
+			<stop offset="1" style="stop-opacity:0" />
 		</linearGradient>
 
 		<linearGradient
@@ -35,8 +35,8 @@
 			y2="60.001"
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
-			<stop offset=".464" style="stop-color:#f4f4f4" />
-			<stop offset="1" style="stop-color:#d1d1d1;stop-opacity:0" />
+			<stop offset=".464" style="stop-opacity:0.12" />
+			<stop offset="0.9" style="stop-opacity:0" />
 		</linearGradient>
 
 		<linearGradient
@@ -48,9 +48,9 @@
 			y2="-46.967"
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
-			<stop offset=".089" style="stop-color:#f9f9f9;stop-opacity:0" />
-			<stop offset=".464" style="stop-color:#e1e1e1" />
-			<stop offset=".896" style="stop-color:#fff;stop-opacity:0" />
+			<stop offset=".089" style="stop-opacity:0.07" />
+			<stop offset=".464" style="stop-opacity:0.2" />
+			<stop offset=".896" style="stop-opacity:0" />
 		</linearGradient>
 
 		<linearGradient
@@ -62,9 +62,9 @@
 			y2="-168.179"
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
-			<stop offset=".172" style="stop-color:#fff;stop-opacity:0" />
-			<stop offset=".464" style="stop-color:#f2f2f2" />
-			<stop offset=".771" style="stop-color:#fff;stop-opacity:0" />
+			<stop offset=".172" style="stop-opacity:0" />
+			<stop offset=".464" style="stop-opacity: 0.16" />
+			<stop offset=".771" style="stop-opacity:0" />
 		</linearGradient>
 	</defs>
 
@@ -190,5 +190,15 @@
 		stroke-width: 1.165;
 		animation: grow 0.3s linear both;
 		transform-origin: 50% 50%;
+	}
+
+	stop {
+		stop-color: rgba(0, 0, 0, 0.5);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		stop {
+			stop-color: white;
+		}
 	}
 </style>
