@@ -83,7 +83,7 @@
 	.info {
 		--border-color: rgba(0, 0, 0, 0.08);
 		position: absolute;
-		bottom: 8rem;
+		bottom: 10rem;
 		left: 0;
 		width: 100%;
 		display: grid;
