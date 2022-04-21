@@ -21,6 +21,8 @@
 <svelte:head>
 	<title>SvelteKit on the edge</title>
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@sveltejs" />
+	<meta name="twitter:title" content="SvelteKit on the edge" />
 	<meta name="twitter:image" content={card} />
 	<meta name="description" content="HTML, dynamically rendered in a city near you" />
 </svelte:head>
