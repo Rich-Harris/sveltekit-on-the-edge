@@ -116,21 +116,22 @@
 		}
 
 		.info {
+			display: flex;
+			justify-content: center;
+			position: relative;
 			top: 60vh;
-			/* gap: 2rem; */
+			gap: 4rem;
 			grid-template-columns: 1fr 1fr;
 		}
 
 		.block:nth-child(1) {
 			border-bottom: none;
-			border-right: 1px solid var(--border-color);
+			/* border-right: 1px solid var(--border-color); */
 			justify-content: end;
-			padding: 0 4rem 0 1rem;
 		}
 
 		.block:nth-child(2) {
 			justify-content: start;
-			padding: 0 1rem 0 4rem;
 		}
 	}
 
