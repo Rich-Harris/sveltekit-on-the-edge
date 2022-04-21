@@ -9,7 +9,7 @@
 			y2="167"
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
-			<stop offset=".464" style="stop-opacity:0.15" />
+			<stop offset=".464" style="stop-opacity:0.2" />
 			<stop offset="0.9" style="stop-opacity:0" />
 		</linearGradient>
 
@@ -22,7 +22,7 @@
 			y2="117.001"
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
-			<stop offset=".464" style="stop-opacity:0.15" />
+			<stop offset=".464" style="stop-opacity:0.2" />
 			<stop offset="1" style="stop-opacity:0" />
 		</linearGradient>
 
@@ -35,7 +35,7 @@
 			y2="60.001"
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
-			<stop offset=".464" style="stop-opacity:0.12" />
+			<stop offset=".464" style="stop-opacity:0.16" />
 			<stop offset="0.9" style="stop-opacity:0" />
 		</linearGradient>
 
@@ -48,8 +48,8 @@
 			y2="-46.967"
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
-			<stop offset=".089" style="stop-opacity:0.07" />
-			<stop offset=".464" style="stop-opacity:0.2" />
+			<stop offset=".089" style="stop-opacity:0.1" />
+			<stop offset=".464" style="stop-opacity:0.27" />
 			<stop offset=".896" style="stop-opacity:0" />
 		</linearGradient>
 
@@ -63,7 +63,7 @@
 			gradientTransform="matrix(1 0 0 -1 0 442)"
 		>
 			<stop offset=".172" style="stop-opacity:0" />
-			<stop offset=".464" style="stop-opacity: 0.16" />
+			<stop offset=".464" style="stop-opacity: 0.21" />
 			<stop offset=".771" style="stop-opacity:0" />
 		</linearGradient>
 
@@ -225,7 +225,7 @@
 	}
 
 	stop {
-		stop-color: rgba(0, 0, 0, 0.5);
+		stop-color: rgba(0, 0, 0, 0.3);
 	}
 
 	@media (prefers-color-scheme: dark) {
