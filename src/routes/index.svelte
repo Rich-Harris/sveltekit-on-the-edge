@@ -21,6 +21,7 @@
 <svelte:head>
 	<title>SvelteKit on the edge</title>
 	<meta name="twitter:image" content={card} />
+	<meta name="description" content="HTML, dynamically rendered in a city near you" />
 </svelte:head>
 
 <Card />
@@ -60,7 +61,7 @@
 	}
 
 	h1 {
-		font-size: min(16vw, 8rem);
+		font-size: min(16vw, 6rem);
 		font-weight: 600;
 		margin: 0;
 		text-align: center;
