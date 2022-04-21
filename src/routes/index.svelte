@@ -7,7 +7,7 @@
 
 <script>
 	import '../app.css';
-	import card from '$lib/images/light.webp';
+	import card from '$lib/twitter-card.png';
 	import Card from '$lib/Card.svelte';
 	import Footer from '$lib/Footer.svelte';
 
