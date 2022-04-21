@@ -56,7 +56,7 @@
 	}
 
 	h1 {
-		font-size: 8vw;
+		font-size: min(8vw, 4rem);
 		font-weight: 800;
 		margin: 0;
 	}
@@ -73,10 +73,10 @@
 	.info {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		font-size: 4vw;
+		font-size: min(4vw, 2rem);
 		margin: 20vh 0 0 0;
 		padding: 1rem;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(255, 255, 255, 0.5);
 		border-top: 1px solid white;
 	}
 
@@ -94,5 +94,11 @@
 		padding: 1rem;
 		box-sizing: border-box;
 		font-size: 16px;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.info {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
 	}
 </style>
