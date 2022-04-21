@@ -25,25 +25,25 @@
 		justify-content: space-evenly;
 		width: 100vw;
 		height: 100vh;
-		background: white url($lib/images/light.webp) 50% 50% no-repeat;
-		background-size: contain;
+		background: white url($lib/images/light.webp) 50% 50% / contain no-repeat;
 		padding: 1rem;
 		box-sizing: border-box;
 	}
 
 	h1 {
-		font-size: 6vw;
+		font-size: 8vw;
 		font-weight: 800;
 	}
 
 	p {
-		font-size: 3vw;
+		font-size: 4vw;
 		font-weight: 400;
 	}
 
 	@media (prefers-color-scheme: dark) {
 		main {
-			background: black url($lib/images/dark.webp) 50% 50% no-repeat;
+			background-color: black;
+			background-image: url($lib/images/dark.webp);
 			color: white;
 		}
 	}
