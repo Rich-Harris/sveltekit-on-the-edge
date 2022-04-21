@@ -75,9 +75,9 @@
 			x2="1.5"
 			y2="1"
 		>
-			<stop offset="0.3" style="stop-color: #eee;" />
-			<stop offset="0.5" style="stop-color: #fff;" />
-			<stop offset="0.8" style="stop-color: #eee" />
+			<stop offset="0.3" style="stop-color: var(--g1);" />
+			<stop offset="0.5" style="stop-color: var(--g2);" />
+			<stop offset="0.8" style="stop-color: var(--g1)" />
 		</linearGradient>
 
 		<linearGradient
@@ -219,11 +219,21 @@
 		transform-origin: 50% 50%;
 	}
 
+	#gradient-vercel {
+		--g1: #000;
+		--g2: #333;
+	}
+
 	stop {
 		stop-color: rgba(0, 0, 0, 0.5);
 	}
 
 	@media (prefers-color-scheme: dark) {
+		#gradient-vercel {
+			--g1: #eee;
+			--g2: #fff;
+		}
+
 		stop {
 			stop-color: white;
 		}
