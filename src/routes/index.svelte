@@ -121,11 +121,6 @@
 			grid-template-columns: 1fr 1fr;
 		}
 
-		.block {
-			/* width of 255.255.255.255 */
-			/* min-width: 11.2em;  */
-		}
-
 		.block:nth-child(1) {
 			border-bottom: none;
 			border-right: 1px solid var(--border-color);

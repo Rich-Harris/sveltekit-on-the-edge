@@ -88,9 +88,9 @@
 			x2="1.1"
 			y2="1"
 		>
-			<stop offset="0.3" style="stop-color: #ff3e00;" />
+			<stop offset="0.3" style="stop-color: var(--svelte);" />
 			<stop offset="0.5" style="stop-color: #ff7f54;" />
-			<stop offset="0.8" style="stop-color: #ff3e00" />
+			<stop offset="0.8" style="stop-color: var(--svelte)" />
 		</linearGradient>
 	</defs>
 
@@ -204,8 +204,7 @@
 	}
 
 	.orange.satellite {
-		/* stroke: #ff7f54; */
-		stroke: #ff3e00;
+		stroke: var(--svelte);
 	}
 
 	.gray.satellite {

@@ -48,7 +48,7 @@
 	}
 
 	a {
-		color: #ff3e00;
+		color: var(--svelte);
 		text-decoration: none;
 	}
 
