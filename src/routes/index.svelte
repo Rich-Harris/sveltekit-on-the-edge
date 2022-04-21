@@ -44,7 +44,7 @@
 </main>
 
 <footer>
-	<a href="https://vercel.com">▲ vercel.com</a>
+	<a class="company" href="https://vercel.com">▲ vercel.com</a>
 
 	<p>
 		Built with <a href="https://kit.svelte.dev">SvelteKit</a> and
@@ -97,13 +97,18 @@
 		text-decoration: hover;
 	}
 
+	.company {
+		font-weight: 600;
+	}
+
 	.source {
 		display: flex;
 		gap: 0.5rem;
 		align-items: center;
 	}
 
-	.source a {
+	.source a,
+	.company {
 		color: var(--fg);
 	}
 
