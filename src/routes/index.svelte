@@ -54,7 +54,7 @@
 	main {
 		position: relative;
 		width: 100vw;
-		height: 100vh;
+		height: 100%;
 		padding: 2.5rem;
 		box-sizing: border-box;
 	}
@@ -82,7 +82,7 @@
 	.info {
 		--border-color: rgba(0, 0, 0, 0.08);
 		position: absolute;
-		bottom: 10rem;
+		bottom: 9rem;
 		left: 0;
 		width: 100%;
 		display: grid;

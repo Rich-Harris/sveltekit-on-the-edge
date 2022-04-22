@@ -1,3 +1,8 @@
+html,
+body {
+	height: 100%;
+}
+
 body {
 	--fg: black;
 	--bg: white;
@@ -7,6 +12,7 @@ body {
 		'Open Sans', 'Helvetica Neue', sans-serif;
 	background: var(--bg);
 	color: var(--fg);
+	overflow: hidden;
 }
 
 ::selection {
