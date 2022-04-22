@@ -253,7 +253,8 @@
 
 	@media (prefers-reduced-motion) {
 		.satellite,
-		.orbit {
+		.orbit,
+		.orbits > g {
 			animation: none;
 		}
 	}
