@@ -7,7 +7,7 @@
 
 <script>
 	import '../app.css';
-	import card from '$lib/twitter-card.png';
+	import card from '$lib/twitter-card.jpg';
 	import Card from '$lib/Card.svelte';
 	import Footer from '$lib/Footer.svelte';
 
@@ -20,7 +20,8 @@
 
 <svelte:head>
 	<title>SvelteKit on the edge</title>
-	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@vercel" />
 	<meta name="twitter:creator" content="@sveltejs" />
 	<meta name="twitter:title" content="SvelteKit on the edge" />
 	<meta name="twitter:image" content={card} />
