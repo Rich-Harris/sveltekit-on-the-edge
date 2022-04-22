@@ -98,15 +98,15 @@
 		<g>
 			<circle class="orbit" style="stroke:url(#gradient-1); animation-delay: 0;" r="53.4" />
 		</g>
-		<g style="animation-duration: 60s">
+		<g style="animation-duration: 120s">
 			<circle class="orbit" style="stroke:url(#gradient-2); animation-delay: 0.03s;" r="103.4" />
 			<circle class="gray satellite" style="animation-delay: 0.9s" cx="-69.6" cy="-76" r="5.8" />
 		</g>
-		<g style="animation-duration: 75s">
+		<g style="animation-duration: 150s">
 			<circle class="orbit" style="stroke:url(#gradient-3); animation-delay: 0.06s;" r="160.4" />
 			<circle class="orange satellite" style="animation-delay: 0.8s" cx="102.4" cy="-123" r="5.8" />
 		</g>
-		<g style="animation-duration: 90s">
+		<g style="animation-duration: 180s">
 			<circle class="orbit" style="stroke:url(#gradient-4); animation-delay: 0.09s;" r="267.3" />
 			<circle
 				class="orange satellite"
