@@ -94,47 +94,40 @@
 		</linearGradient>
 	</defs>
 
-	<circle
-		class="orbit"
-		style="stroke:url(#gradient-1); animation-delay: 0;"
-		cx="420"
-		cy="221"
-		r="53.4"
-	/>
-	<circle
-		class="orbit"
-		style="stroke:url(#gradient-2); animation-delay: 0.03s;"
-		cx="420"
-		cy="221"
-		r="103.4"
-	/>
-	<circle
-		class="orbit"
-		style="stroke:url(#gradient-3); animation-delay: 0.06s;"
-		cx="420"
-		cy="221"
-		r="160.4"
-	/>
-	<circle
-		class="orbit"
-		style="stroke:url(#gradient-4); animation-delay: 0.09s;"
-		cx="419.9"
-		cy="221.1"
-		r="267.3"
-	/>
-	<circle
-		class="orbit"
-		style="stroke:url(#gradient-5); animation-delay: 0.12s;"
-		cx="419.9"
-		cy="221.1"
-		r="388.5"
-	/>
-
-	<circle class="orange satellite" style="animation-delay: 0.6s" cx="176.4" cy="331.4" r="5.8" />
-	<circle class="orange satellite" style="animation-delay: 0.7s" cx="183.4" cy="96.4" r="5.8" />
-	<circle class="orange satellite" style="animation-delay: 0.8s" cx="522.4" cy="97" r="5.8" />
-	<circle class="gray satellite" style="animation-delay: 0.9s" cx="350.4" cy="144" r="5.8" />
-	<circle class="gray satellite" style="animation-delay: 1s" cx="670" cy="314.4" r="5.8" />
+	<g class="orbits" transform="translate(420, 220)">
+		<g>
+			<circle class="orbit" style="stroke:url(#gradient-1); animation-delay: 0;" r="53.4" />
+		</g>
+		<g style="animation-duration: 60s">
+			<circle class="orbit" style="stroke:url(#gradient-2); animation-delay: 0.03s;" r="103.4" />
+			<circle class="gray satellite" style="animation-delay: 0.9s" cx="-69.6" cy="-76" r="5.8" />
+		</g>
+		<g style="animation-duration: 75s">
+			<circle class="orbit" style="stroke:url(#gradient-3); animation-delay: 0.06s;" r="160.4" />
+			<circle class="orange satellite" style="animation-delay: 0.8s" cx="102.4" cy="-123" r="5.8" />
+		</g>
+		<g style="animation-duration: 90s">
+			<circle class="orbit" style="stroke:url(#gradient-4); animation-delay: 0.09s;" r="267.3" />
+			<circle
+				class="orange satellite"
+				style="animation-delay: 0.6s"
+				cx="-243.6"
+				cy="111.4"
+				r="5.8"
+			/>
+			<circle class="gray satellite" style="animation-delay: 1s" cx="250" cy="94.4" r="5.8" />
+			<circle
+				class="orange satellite"
+				style="animation-delay: 0.7s"
+				cx="-236.6"
+				cy="-123.6"
+				r="5.8"
+			/>
+		</g>
+		<g>
+			<circle class="orbit" style="stroke:url(#gradient-5); animation-delay: 0.12s;" r="388.5" />
+		</g>
+	</g>
 
 	<path id="vercel-logo" d="m336.4 261-46.2-80-46.2 80h92.4z" style="fill:url(#gradient-vercel)" />
 
@@ -198,6 +191,15 @@
 		}
 	}
 
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(-360deg);
+		}
+	}
+
 	svg {
 		position: absolute;
 		width: 100%;
@@ -208,7 +210,7 @@
 	.satellite {
 		fill: var(--bg);
 		stroke-width: 1.165;
-		animation: fade-in 1s both;
+		/* animation: fade-in 1s both; */
 	}
 
 	.orange.satellite {
@@ -223,7 +225,10 @@
 		fill: none;
 		stroke-width: 1.165;
 		animation: grow 5s linear both infinite;
-		transform-origin: 50% 50%;
+	}
+
+	.orbits > g {
+		animation: spin 60s linear both infinite;
 	}
 
 	#gradient-vercel {
@@ -243,6 +248,13 @@
 
 		stop {
 			stop-color: white;
+		}
+	}
+
+	@media (prefers-reduced-motion) {
+		.satellite,
+		.orbit {
+			animation: none;
 		}
 	}
 </style>
