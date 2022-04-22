@@ -4,7 +4,7 @@ export function get(event) {
 		body: {
 			ip: event.clientAddress,
 			city: decodeURIComponent(
-				/** @type {string} */ (event.request.headers.get('x-vercel-ip-city'))
+				/** @type {string} */ (event.request.headers.get('x-vercel-ip-city')) || 'Unknown'
 			)
 		}
 	};
