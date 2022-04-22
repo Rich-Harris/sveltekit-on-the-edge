@@ -10,6 +10,7 @@
 	import card from '$lib/twitter-card.jpg';
 	import Card from '$lib/Card.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import { page } from '$app/stores';
 
 	/** @type {string} */
 	export let city;
@@ -26,7 +27,7 @@
 	<meta name="twitter:creator" content="@sveltejs" />
 	<meta name="twitter:title" content="SvelteKit on the edge" />
 	<meta name="twitter:description" content="HTML, dynamically rendered in a city near you" />
-	<meta name="twitter:image" content={card} />
+	<meta name="twitter:image" content="{$page.url.origin}{card}" />
 	<meta name="twitter:image:alt" content="The Vercel and Svelte logos" />
 </svelte:head>
 
