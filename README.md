@@ -23,14 +23,16 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## Deploying
 
-To create a production version of your app:
+The easiest way to deploy your app is to link the repo to your Vercel account. Alternatively, you can create a production build locally...
 
-```bash
-npm run build
+```
+ENABLE_VC_BUILD npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+...and deploy the prebuilt app to Vercel:
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```
+vc deploy --prebuilt
+```
