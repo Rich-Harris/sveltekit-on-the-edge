@@ -1,4 +1,4 @@
-# Sveltekit on the edge
+# SvelteKit on the edge
 
 Powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
