@@ -1,6 +1,6 @@
 # SvelteKit on the edge
 
-Powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A demo [SvelteKit](https://kit.svelte.dev) app running on [Vercel Edge Functions](https://vercel.com/features/edge-functions), which run close to your users to enable dynamic server-side rendering at the speed of static content.
 
 ## How to enable edge functions in your SvelteKit app deployed to Vercel
 
