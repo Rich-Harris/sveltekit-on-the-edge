@@ -4,8 +4,6 @@ Powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/package
 
 ## How to enable edge functions
 
-- Update [svelte.config.js](/svelte.config.js) with a supported [adapter](https://kit.svelte.dev/docs/adapters)
-- Routes like [routes/index.js](/src/routes/index.js) now run as Edge Functions
 
 [Learn more about SvelteKit](https://kit.svelte.dev/)
 
