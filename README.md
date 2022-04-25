@@ -5,7 +5,6 @@ A demo [SvelteKit](https://kit.svelte.dev) app running on [Vercel Edge Functions
 ## How to enable edge functions in your SvelteKit app deployed to Vercel
 
 
-[Learn more about SvelteKit](https://kit.svelte.dev/)
 
 
 ## Developing
