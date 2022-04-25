@@ -2,7 +2,7 @@
 
 Powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## How to enable edge functions
+## How to enable edge functions in your SvelteKit app deployed to Vercel
 
 
 [Learn more about SvelteKit](https://kit.svelte.dev/)
