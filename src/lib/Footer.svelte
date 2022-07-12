@@ -15,6 +15,8 @@
 		<a target="_blank" href="https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel"
 			>adapter-vercel</a
 		>
+
+		<small>Generated at {new Date().toISOString()}</small>
 	</p>
 
 	<p class="source">
@@ -91,6 +93,16 @@
 	.source a,
 	.company a {
 		color: var(--fg);
+	}
+
+	small {
+		position: absolute;
+		left: 0;
+		bottom: 20px;
+		text-align: center;
+		width: 100%;
+		font-size: 11px;
+		color: #999;
 	}
 
 	@media (min-width: 800px) {
