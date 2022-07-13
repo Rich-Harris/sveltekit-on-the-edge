@@ -28,7 +28,7 @@ npm run dev -- --open
 The easiest way to deploy your app is to link the repo to your Vercel account. Alternatively, you can create a production build locally...
 
 ```
-ENABLE_VC_BUILD npm run build
+ENABLE_VC_BUILD=1 npm run build
 ```
 
 ...and deploy the prebuilt app to Vercel:
