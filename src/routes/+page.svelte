@@ -10,11 +10,6 @@
 	console.log(data);
 </script>
 
-<!-- <script context="module">
-	import { dev } from '$app/env';
-	export const hydrate = dev;
-	export const router = false;
-</script> -->
 <svelte:head>
 	<title>SvelteKit on the edge</title>
 	<meta name="description" content="HTML, dynamically rendered in a city near you" />
