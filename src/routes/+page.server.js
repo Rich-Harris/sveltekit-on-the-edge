@@ -1,7 +1,9 @@
+import { dev } from '$app/environment';
+export const hydrate = dev;
+export const router = false;
+
 /** @type {import('./$types').PageLoad} */
 export function load(event) {
-    // console.log(event.request.headers.get('x-vercel-ip-city'))
-    // console.log(event.request.headersList)
     return {
         ip: event.getClientAddress(),
         city: decodeURIComponent(

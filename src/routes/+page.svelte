@@ -34,9 +34,9 @@
 
 	<div class="info">
 		<div class="block">
-			<div title={`${data?.city}`} class="contents">
+			<div class="contents">
 				<span>Your city</span>
-				<strong>Suratgarh</strong>
+				<strong>{data.city}</strong>
 			</div>
 		</div>
 		<div class="block">
