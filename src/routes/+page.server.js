@@ -1,3 +1,4 @@
+export const csr = false;
 /** @type {import('./$types').PageLoad} */
 export function load(event) {
     return {
