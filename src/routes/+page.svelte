@@ -1,10 +1,3 @@
-<script context="module">
-	import { dev } from '$app/env';
-
-	export const hydrate = dev;
-	export const router = false;
-</script>
-
 <script>
 	import '../app.css';
 	import card from '$lib/twitter-card.jpg';
@@ -12,13 +5,16 @@
 	import Footer from '$lib/Footer.svelte';
 	import { page } from '$app/stores';
 
-	/** @type {string} */
-	export let city;
-
-	/** @type {string} */
-	export let ip;
+	/** @type {import('./$types').PageData} */
+	export let data;
+	console.log(data);
 </script>
 
+<!-- <script context="module">
+	import { dev } from '$app/env';
+	export const hydrate = dev;
+	export const router = false;
+</script> -->
 <svelte:head>
 	<title>SvelteKit on the edge</title>
 	<meta name="description" content="HTML, dynamically rendered in a city near you" />
@@ -38,15 +34,15 @@
 
 	<div class="info">
 		<div class="block">
-			<div class="contents">
+			<div title={`${data?.city}`} class="contents">
 				<span>Your city</span>
-				<strong>{city}</strong>
+				<strong>Suratgarh</strong>
 			</div>
 		</div>
 		<div class="block">
 			<div class="contents">
 				<span>Your IP address</span>
-				<strong>{ip}</strong>
+				<strong>{data.ip}</strong>
 			</div>
 		</div>
 	</div>
