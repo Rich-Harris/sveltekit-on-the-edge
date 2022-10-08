@@ -1,4 +1,7 @@
-export const csr = false;
+import { dev } from "$app/environment"
+
+export const csr = dev;
+
 /** @type {import('./$types').PageLoad} */
 export function load(event) {
     return {
