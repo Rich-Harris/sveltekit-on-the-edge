@@ -4,13 +4,9 @@ A demo [SvelteKit](https://kit.svelte.dev) app running on [Vercel Edge Functions
 
 ## How to enable edge functions in your SvelteKit app deployed to Vercel
 
-> While the Vercel Build Output API is in beta, you'll need to add the `ENABLE_VC_BUILD` environment variable with a value of `1` to your project on [vercel.com](https://vercel.com). 
 - Use your package manager to install [`@sveltejs/adapter-vercel`](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel)
 - Update [svelte.config.js](/svelte.config.js) to use `adapter-vercel` instead of the default `adapter-auto`
 - Pass the `edge: true` option to the adapter
-
-
-
 
 ## Developing
 
@@ -28,7 +24,7 @@ npm run dev -- --open
 The easiest way to deploy your app is to link the repo to your Vercel account. Alternatively, you can create a production build locally...
 
 ```
-ENABLE_VC_BUILD npm run build
+npm run build
 ```
 
 ...and deploy the prebuilt app to Vercel:
