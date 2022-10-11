@@ -1,9 +1,10 @@
 <script>
-	import '../app.css';
+	import '$lib/styles.css';
 	import card from '$lib/twitter-card.jpg';
 	import Card from '$lib/Card.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import { page } from '$app/stores';
+
 	/** @type {import('./$types').PageData} */
 	export let data;
 </script>

@@ -1,26 +1,25 @@
 {
-    "name": "what-is-my-ip",
-    "version": "0.0.1",
-    "scripts": {
-        "dev": "vite dev",
-        "build": "vite build",
-        "preview": "vite preview",
-        "prepare": "svelte-kit sync",
-        "check": "svelte-check --tsconfig ./jsconfig.json",
-        "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
-        "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
-        "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
-    },
-    "devDependencies": {
-        "@sveltejs/adapter-auto": "next",
-        "@sveltejs/adapter-vercel": "next",
-        "@sveltejs/kit": "next",
-        "prettier": "latest",
-        "prettier-plugin-svelte": "latest",
-        "svelte": "latest",
-        "svelte-check": "latest",
-        "typescript": "~4.6.2",
-        "vite": "latest"
-    },
-    "type": "module"
+	"name": "sveltekit-on-the-edge",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-vercel": "next",
+		"@sveltejs/kit": "next",
+		"prettier": "latest",
+		"prettier-plugin-svelte": "latest",
+		"svelte": "latest",
+		"svelte-check": "latest",
+		"typescript": "~4.6.2",
+		"vite": "latest"
+	},
+	"type": "module"
 }
