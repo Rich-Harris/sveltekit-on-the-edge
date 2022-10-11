@@ -1,22 +1,12 @@
-<script context="module">
-	import { dev } from '$app/env';
-
-	export const hydrate = dev;
-	export const router = false;
-</script>
-
 <script>
-	import '../app.css';
+	import '$lib/styles.css';
 	import card from '$lib/twitter-card.jpg';
 	import Card from '$lib/Card.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import { page } from '$app/stores';
 
-	/** @type {string} */
-	export let city;
-
-	/** @type {string} */
-	export let ip;
+	/** @type {import('./$types').PageData} */
+	export let data;
 </script>
 
 <svelte:head>
@@ -40,13 +30,13 @@
 		<div class="block">
 			<div class="contents">
 				<span>Your city</span>
-				<strong>{city}</strong>
+				<strong>{data.city}</strong>
 			</div>
 		</div>
 		<div class="block">
 			<div class="contents">
 				<span>Your IP address</span>
-				<strong>{ip}</strong>
+				<strong>{data.ip}</strong>
 			</div>
 		</div>
 	</div>

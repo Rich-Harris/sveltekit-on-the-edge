@@ -1,11 +1,10 @@
 {
-	"name": "what-is-my-ip",
+	"name": "sveltekit-on-the-edge",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"prepare": "svelte-kit sync",
 		"check": "svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
@@ -13,14 +12,14 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/adapter-vercel": "^1.0.0-next.48",
+		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
-		"prettier": "^2.5.1",
-		"prettier-plugin-svelte": "^2.5.0",
-		"svelte": "^3.44.0",
-		"svelte-check": "^2.2.6",
+		"prettier": "latest",
+		"prettier-plugin-svelte": "latest",
+		"svelte": "latest",
+		"svelte-check": "latest",
 		"typescript": "~4.6.2",
-		"vite": "^2.9.14"
+		"vite": "latest"
 	},
 	"type": "module"
 }
