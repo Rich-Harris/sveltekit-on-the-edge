@@ -6,7 +6,7 @@
 	export let data;
 </script>
 
-<h1><span>Hello from Node!</span></h1>
+<h1><span>Hello from the edge!</span></h1>
 
 <div class="info">
 	{#await data.streamed.details}
