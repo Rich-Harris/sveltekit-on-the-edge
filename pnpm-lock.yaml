@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@sveltejs/adapter-vercel': ^2.0.4
-  '@sveltejs/kit': ^1.8.0
+  '@sveltejs/kit': ^1.8.2
   prettier: ^2.8.4
   prettier-plugin-svelte: ^2.9.0
   svelte: ^3.55.1
@@ -11,8 +11,8 @@ specifiers:
   vite: ^4.1.3
 
 devDependencies:
-  '@sveltejs/adapter-vercel': 2.0.4_@sveltejs+kit@1.8.0
-  '@sveltejs/kit': 1.8.0_svelte@3.55.1+vite@4.1.3
+  '@sveltejs/adapter-vercel': 2.0.4_@sveltejs+kit@1.8.2
+  '@sveltejs/kit': 1.8.2_svelte@3.55.1+vite@4.1.3
   prettier: 2.8.4
   prettier-plugin-svelte: 2.9.0_jrsxveqmsx2uadbqiuq74wlc4u
   svelte: 3.55.1
@@ -287,12 +287,12 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-vercel/2.0.4_@sveltejs+kit@1.8.0:
+  /@sveltejs/adapter-vercel/2.0.4_@sveltejs+kit@1.8.2:
     resolution: {integrity: sha512-5tN3sCMQtN/ZV7O26hEVpylIZMMPNkDaDmXxDdEyUZGYpO9x9FOa2CN1CbMQBBGAiCuMxgmtjlWFz4GkYXRU+Q==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.8.0_svelte@3.55.1+vite@4.1.3
+      '@sveltejs/kit': 1.8.2_svelte@3.55.1+vite@4.1.3
       '@vercel/nft': 0.22.6
       esbuild: 0.16.17
     transitivePeerDependencies:
@@ -300,8 +300,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.8.0_svelte@3.55.1+vite@4.1.3:
-    resolution: {integrity: sha512-KHZ5PN9iBskH+bflSGno5bgVf01+MhFs/2jT40hdhTQkbEKrgf0kw/DXq41Bmws9pV29NS6mKEq6wAwgkM2pPQ==}
+  /@sveltejs/kit/1.8.2_svelte@3.55.1+vite@4.1.3:
+    resolution: {integrity: sha512-glqQvVoQCgpwDojpqKpqTa1X3S52Zw0tR8JVkdJE8OxMXJuOhJR6w+Mlo9qGyyjX07yqSQGvy1oPXAUG+e2huQ==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
