@@ -1,4 +1,3 @@
-import { dev } from '$app/environment';
 import { sleep } from '$lib/utils';
 
 let cold = true;

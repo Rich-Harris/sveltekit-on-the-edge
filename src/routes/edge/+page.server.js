@@ -1,5 +1,3 @@
-import { dev } from '$app/environment';
-
 let cold = true;
 
 /** @type {import('./$types').PageServerLoad} */

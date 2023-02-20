@@ -1,11 +1,4 @@
-import { dev } from '$app/environment';
 import { sleep } from '$lib/utils';
-
-export const csr = dev;
-
-export const config = {
-	runtime: 'nodejs18.x'
-};
 
 let cold = true;
 
