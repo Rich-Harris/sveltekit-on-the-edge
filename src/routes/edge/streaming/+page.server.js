@@ -12,8 +12,7 @@ export function load(event) {
 
 	return {
 		streamed: {
-			ip: sleep(ip, 1000),
-			city: sleep(city, 1500)
+			details: sleep({ ip, city }, 1000)
 		},
 		now: new Date().toISOString(),
 		cold: was_cold

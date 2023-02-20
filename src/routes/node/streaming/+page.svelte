@@ -6,28 +6,20 @@
 <h1><span>Hello from Node!</span></h1>
 
 <div class="info">
-	<div class="block">
-		<div class="contents">
-			<span>Your city</span>
-			<strong>
-				{#await data.streamed.city}
-					...
-				{:then city}
-					{city}
-				{/await}
-			</strong>
+	{#await data.streamed.details}
+		<p>streaming delayed data from the server...</p>
+	{:then details}
+		<div class="block">
+			<div class="contents">
+				<span>Your city</span>
+				<strong>{details.city}</strong>
+			</div>
 		</div>
-	</div>
-	<div class="block">
-		<div class="contents">
-			<span>Your IP address</span>
-			<strong>
-				{#await data.streamed.ip}
-					...
-				{:then ip}
-					{ip}
-				{/await}
-			</strong>
+		<div class="block">
+			<div class="contents">
+				<span>Your IP address</span>
+				<strong>{details.ip}</strong>
+			</div>
 		</div>
-	</div>
+	{/await}
 </div>
