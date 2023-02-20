@@ -1,11 +1,6 @@
-import { dev } from '$app/environment';
-
-export const csr = dev;
+import { redirect } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageServerLoad} */
-export function load(event) {
-	return {
-		ip: event.getClientAddress(),
-		city: decodeURIComponent(/** @type {string} */ (event.request.headers.get('x-vercel-ip-city')))
-	};
+export function load() {
+	throw redirect(308, '/edge')
 }
