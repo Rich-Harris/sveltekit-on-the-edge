@@ -40,6 +40,14 @@ h1 span {
 	margin: 0 auto;
 }
 
+a, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .info {
 	--border-color: rgba(0, 0, 0, 0.08);
 	position: absolute;

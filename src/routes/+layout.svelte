@@ -21,11 +21,17 @@
 <Card />
 
 <nav>
-	<a href="/edge">Edge</a>
-	<a href="/edge/streaming">(streamed)</a>
+	<a aria-current={$page.url.pathname === '/edge' ? 'true' : undefined} href="/edge">edge</a>
+	<a
+		aria-current={$page.url.pathname === '/edge/streaming' ? 'true' : undefined}
+		href="/edge/streaming">(streamed)</a
+	>
 	/
-	<a href="/node">Node</a>
-	<a href="/node/streaming">(streamed)</a>
+	<a aria-current={$page.url.pathname === '/node' ? 'true' : undefined} href="/node">node</a>
+	<a
+		aria-current={$page.url.pathname === '/node/streaming' ? 'true' : undefined}
+		href="/node/streaming">(streamed)</a
+	>
 </nav>
 
 <main>
@@ -53,5 +59,15 @@
 		left: 0;
 		width: 100%;
 		z-index: 2;
+		font-size: 0.9rem;
+		color: #999;
+	}
+
+	a {
+		color: #666;
+	}
+
+	a[aria-current='true'] {
+		color: #ff3e00;
 	}
 </style>
