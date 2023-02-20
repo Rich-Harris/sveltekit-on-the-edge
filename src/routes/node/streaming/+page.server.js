@@ -7,10 +7,13 @@ export function load(event) {
 	const was_cold = cold;
 	cold = false;
 
+	const ip = event.getClientAddress();
+	const city = decodeURIComponent(event.request.headers.get('x-vercel-ip-city') ?? 'unknown');
+
 	return {
 		streamed: {
-			ip: sleep(event.getClientAddress(), 1000),
-			city: sleep(decodeURIComponent(/** @type {string} */ (event.request.headers.get('x-vercel-ip-city'))), 1500)
+			ip: sleep(ip, 1000),
+			city: sleep(city, 1500)
 		},
 		now: new Date().toISOString(),
 		cold: was_cold

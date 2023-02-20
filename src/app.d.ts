@@ -6,8 +6,4 @@ declare namespace App {
 	interface PageData {
 		now: string;
 	}
-	// interface Locals {}
-	// interface Platform {}
-	// interface Session {}
-	// interface Stuff {}
 }
