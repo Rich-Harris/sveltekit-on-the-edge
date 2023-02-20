@@ -40,7 +40,8 @@ h1 span {
 	margin: 0 auto;
 }
 
-a, a:visited {
+a,
+a:visited {
 	text-decoration: none;
 }
 
@@ -49,39 +50,21 @@ a:hover {
 }
 
 .info {
-	--border-color: rgba(0, 0, 0, 0.08);
 	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	bottom: 9rem;
 	left: 0;
 	width: 100%;
-	display: grid;
-	padding: 0 2.5rem;
-	font-size: min(5vw, 2rem);
-	box-sizing: border-box;
+	height: 24vh;
 }
 
-.block {
-	display: flex;
-	margin: 0;
-	padding: 1rem 0;
-}
-
-.block:nth-child(1) {
-	border-bottom: 1px solid var(--border-color);
-}
-
-.block span {
-	display: block;
-	margin: 0 0 0.2em 0;
-	text-transform: uppercase;
-	font-size: 0.6em;
-}
-
-.block strong {
-	display: block;
-	font-size: 1.4em;
-	margin: 0;
-	font-weight: 600;
+.info > p {
+	font-size: 1.2rem;
+	max-width: 10em;
+	text-align: center;
+	line-height: 1.5;
 }
 
 @media (min-width: 640px) {
@@ -95,21 +78,8 @@ a:hover {
 	}
 
 	.info {
-		display: flex;
-		justify-content: center;
-		position: relative;
 		top: 60vh;
-		gap: 4rem;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.block:nth-child(1) {
-		border-bottom: none;
-		justify-content: end;
-	}
-
-	.block:nth-child(2) {
-		justify-content: start;
+		height: 10vh;
 	}
 }
 
