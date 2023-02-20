@@ -1,4 +1,5 @@
 <script>
+	import { fade } from 'svelte/transition';
 	import '$lib/styles.css';
 	import card from '$lib/twitter-card.jpg';
 	import Card from '$lib/Card.svelte';
@@ -34,9 +35,11 @@
 	>
 </nav>
 
-<main>
-	<slot />
-</main>
+{#key $page.url.pathname}
+	<main in:fade>
+		<slot />
+	</main>
+{/key}
 
 <Footer />
 
