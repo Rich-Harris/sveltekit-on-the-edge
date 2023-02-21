@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && node scripts/streaming-node.js",
+		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
@@ -11,7 +11,7 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-vercel": "^2.0.4",
+		"@sveltejs/adapter-vercel": "^2.1.0",
 		"@sveltejs/kit": "^1.8.3",
 		"prettier": "^2.8.4",
 		"prettier-plugin-svelte": "^2.9.0",
